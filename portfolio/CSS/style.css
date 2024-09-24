@@ -27,7 +27,7 @@ body{
     margin: 60px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 60px;
     height: 140px;
 
 
@@ -71,7 +71,7 @@ body{
     margin: 67px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 67px;
     height: 200px;
 
 }
@@ -122,7 +122,7 @@ body{
 
 .message_contents{
     text-align: left;
-    padding: 50px 30px;
+    padding: 50px 70px;
 
 }
 
@@ -144,7 +144,7 @@ body{
 }
 
 .service{
-    margin-top: 30px;
+    margin-top: -150px;
 }
 
 .service_contents{
@@ -161,7 +161,7 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 100px;
+    height: 420px;
 }
 
 .service_num{
@@ -288,7 +288,7 @@ textarea.c-form__input {
 
 
 .works{
-    margin-top: 30px;
+    margin-top:  -400px;
 }
 
 .works_contents{
@@ -305,7 +305,7 @@ textarea.c-form__input {
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 100px;
+    height: 420px;
     z-index: 9999;
 
 }
@@ -352,7 +352,7 @@ margin-right: 35px;
 
 
 .about{
-    margin-top: 30px;
+    margin-top: -100px;
 }
 
 .introduction{
@@ -386,9 +386,9 @@ margin-right: 35px;
     font-family: YDWaosagi;
     padding-left: 40px;
     position: -webkit-sticky;
-    position: sticky;
+    /* position: sticky; */
     top: 10px;
-    height: 100px;
+    height: 250px;
     z-index: 9999;
 
 }
@@ -436,6 +436,14 @@ span {
 
 }
 
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev {
+    left: 5px;
+    z-index: 999;
+}
 
 /*　thanksページのセクション　*/
 
@@ -458,7 +466,7 @@ span {
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 100px;
+    height: 420px;
 }
 
 .contact_tit{
@@ -482,3 +490,32 @@ margin: 20px 0;
     margin-bottom: 90px;
 
 }
+@media screen and (max-width: 1100px) {
+.copy {
+    display: none;
+}
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .header_contents {
+        display: none;
+    }
+    
+    .main_contents{
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    
+    
+    }
