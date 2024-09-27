@@ -1,4 +1,18 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'YDWaosagi';
+    src: url('../YDW_aosagi/YDWaosagi.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html[lang="ja"] {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  }
+
+
+
 html{
     font-size:100%;/*ユーザー設定の文字サイズを正しく反映*/
 }
@@ -14,6 +28,7 @@ body{
     margin:0;
     padding:0;
 }
+
 .main{
     display: flex;
     justify-content: space-between;
@@ -42,19 +57,19 @@ body{
     list-style-type: none;
     text-transform: uppercase;
     padding: 10% 0;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
   }
 
   .sns{
     display: flex;
     justify-content: space-between;
-    margin-top: 250px;
+    margin-top: 100px;
   
   }
 
   .sns_text{
     font-size: 14px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     padding: 10% 0 0 0;
 
   }
@@ -79,13 +94,13 @@ body{
  .copy_text{
     writing-mode: vertical-rl;
     font-size: 25px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     line-height: 100px;
  }
  .copy_text2{
     writing-mode: vertical-rl;
     font-size: 25px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     margin-top: -120px;
  }
 
@@ -98,7 +113,7 @@ body{
  }
  .main_text{
     font-size: 60px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     color: #fff;
     line-height: 100px;
     letter-spacing: 1px;
@@ -108,7 +123,7 @@ body{
 
 .main_text2{
     font-size: 21px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     color: #fff;
     line-height: 40px;
     margin: 100px 0 0 20px;
@@ -156,17 +171,18 @@ body{
 .service_title {
     writing-mode: vertical-rl;
     font-size: 100px;
-    font-family: YDWaosagi;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
     padding-left: 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 420px;
+    height: 320px;
 }
 
 .service_num{
     font-size: 24px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
 padding-bottom: 50px;
 }
 
@@ -196,7 +212,7 @@ margin-bottom: 120px;
 
 .footer_title{
     font-size: 24px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     padding: 60px 0;
 
 }
@@ -254,7 +270,7 @@ textarea.c-form__input {
 .c-form__submit button {
 	font-size: 14px;
 	color: #fff;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
 	background-color: #4A6545;
 	border: solid 1px #4A6545;
 	border-radius:20px;
@@ -273,7 +289,7 @@ textarea.c-form__input {
 
 .works_top h1{
     font-size:32px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     text-align: right;
     margin: 60px 35px 45px 0;
 
@@ -300,7 +316,8 @@ textarea.c-form__input {
 .works_title {
     writing-mode: vertical-rl;
     font-size: 100px;
-    font-family: YDWaosagi;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
     padding-left: 40px;
     position: -webkit-sticky;
     position: sticky;
@@ -333,7 +350,7 @@ textarea.c-form__input {
 
 .about_top h1{
     font-size:32px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     text-align: right;
     margin: 60px 35px 45px 0;
 
@@ -383,15 +400,16 @@ margin-right: 35px;
 .about_title {
     writing-mode: vertical-rl;
     font-size: 100px;
-    font-family: YDWaosagi;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
     padding-left: 40px;
     position: -webkit-sticky;
-    /* position: sticky; */
+    position: sticky;
     top: 10px;
-    height: 250px;
+    height: 150px;
     z-index: 9999;
-
 }
+
 
 .about_main {
     font-size: 24px;
@@ -416,7 +434,7 @@ span {
 
 .about_num{
     font-size: 24px;
-    font-family: YDWaosagi;
+    font-family: 'YDWaosagi';
     padding: 30px;
 }
 
@@ -461,12 +479,13 @@ span {
 .contact_title {
     writing-mode: vertical-rl;
     font-size: 100px;
-    font-family: YDWaosagi;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
     padding-left: 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 420px;
+    height: 10px;
 }
 
 .contact_tit{
@@ -490,8 +509,10 @@ margin: 20px 0;
     margin-bottom: 90px;
 
 }
-@media screen and (max-width: 1100px) {
-.copy {
+
+
+.hamburger,
+.header_nav-sp{
     display: none;
 }
 
@@ -499,8 +520,25 @@ margin: 20px 0;
 
 
 
+@media screen and (max-width: 1100px) {
+.copy {
+    display: none;
+}
+
+
+.hamburger,
+.header_nav-sp{
+    display: none;
+}
+
+
+
 
 }
+
+
+
+
 
 
 @media screen and (max-width: 700px) {
@@ -513,6 +551,92 @@ margin: 20px 0;
         margin: 0 auto;
     }
     
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        cursor: pointer;
+        z-index: 9999;
+      }
+      .hamburger span{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: 13px;
+        transition: .3s;
+      }
+    /* hamメニュー（擬似要素） */
+    .hamburger span::before{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: -13px;
+        transition: .3s;
+    
+      }
+      .hamburger span::after{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;;
+        position: absolute;
+        content: "";
+        bottom: -13px;
+        transition: .3s;
+    
+      }
+    
+    .open span{
+        background: transparent;
+    }
+    
+    .open span::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after{
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+    
+    
+    /* hamメニューが押されてnavが開いた時のCSS */
+    
+    .header_nav-sp{
+        position: absolute;
+        width: 370px;
+        height: 85vh;
+        margin: 0 auto;
+        background-color:#F3E9DC;
+        z-index: 9998;
+    
+    }
+    
+    .header_nav-sp ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 20px;
+        height: 100%;
+    }
+    
+    .header_nav-sp li{
+        color: #4A6545;
+       font-weight: bold;
+       font-size: 24px;
+       line-height: 48px;
+       border-bottom: 2px solid #4A6545;
+  display: inline-block;
+    }
+    
+
     
     
     

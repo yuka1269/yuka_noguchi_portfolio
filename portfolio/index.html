@@ -9,12 +9,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="./YDW_aosagi/YDWaosagi.otf">
         	
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
-    
 
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./slick-1.8.1/slick/slick.js"></script>
+<!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
+<script src="js/lightbox.min.js"></script>
+<script src="./JS/script.js"></script>
+
+
 
 <script type="text/javascript">
     let submitted = false;
@@ -26,7 +35,8 @@
     onload="if(submitted){window.location='./thanks.html';}"
 >
 </iframe>
-        
+
+       
 </head>
  <body>
     <main class="main">
@@ -40,9 +50,9 @@
             <nav class="header_nav">
                 <ul>
                     <li><a href="./index.html"></a>top</li>
-                    <li><a href="#"></a>about</li>
-                    <li><a href="./works.html"></a>works</li>
-                    <li><a href="#works"></a>works</li>
+                    <li><a href="./about.html"></a>about</li>
+                    <li><a href="./works.html"></a>graphic</li>
+                    <li><a href="./works2.html"></a>web</li>
                     <li><a href="#contact"></a>contact</li>
 
                 </ul>
@@ -70,16 +80,36 @@
               </nav> -->
         </div>
     </header>
+
     <div class="main_contents">
+        <div class="hamburger">
+            <span></span>
+            </div>
+            
+            <nav class="header_nav-sp">
+                <ul>
+                    <li><a href="./index.html"></a>top</li>
+                    <li><a href="./about.html"></a>about</li>
+                    <li><a href="./works.html"></a>graphic</li>
+                    <li><a href="#works"></a>web</li>
+                    <li><a href="#contact"></a>contact</li>
+
+                </ul>
+            </nav>
+            
 <div class="top_img">
     <img src="./img/top.jpg" alt="">
 </div>
+
 <h1 class="main_text">I am<br>
     YUKA<br>
     NOGUCHI
 </h1>
 <h1 class="main_text2">伝えたい気持ちに<br>
 気付いてもらうデザイン</h1>
+
+
+
 
 <div class="message">
   <div class="message_contents">
@@ -128,7 +158,7 @@
 <img src="./img/hasami.png" alt="">
 
 <div class="footer">
-    <h2 class="footer_title">contact</h2>
+    <h2 id="contact" class="footer_title">contact</h2>
     <p class="footer_text">お仕事のご依頼、ご相談等お気軽にご連絡ください。</p>
     
     <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHk-205j1omfILifJ-HAJKz1fVdy8b5tgtZWtx-HyDPvkQRQ/formResponse"
@@ -156,7 +186,9 @@
                 >メールアドレス</label
             >
         </div>
+
             <div class="c-form__item">
+
             <input
             name="entry.370200845"
                 class="c-form__input"
