@@ -48,3 +48,10 @@ $(function(){
 });
 });
 
+$(function(){
+  $(".hamburger2").click(function (){
+    $(".hamburger2").toggleClass("open");
+    $(".header_nav-sp").fadeToggle();
+
+});
+});

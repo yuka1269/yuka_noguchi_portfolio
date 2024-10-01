@@ -56,9 +56,14 @@ body{
     display: list-item;  /* 縦に並べる */
     list-style-type: none;
     text-transform: uppercase;
-    padding: 10% 0;
+    padding: 10px 0;
     font-family: 'YDWaosagi';
   }
+
+  .header_nav a {
+    line-height: 2;
+  }
+
 
   .sns{
     display: flex;
@@ -111,6 +116,9 @@ body{
 
 
  }
+
+
+
  .main_text{
     font-size: 60px;
     font-family: 'YDWaosagi';
@@ -177,7 +185,7 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    height: 320px;
+    height: 180px;
 }
 
 .service_num{
@@ -341,8 +349,10 @@ textarea.c-form__input {
 
 
 .slider_work {
-    width: 300px;
+    width: 100%;
   }
+
+
   
 
 /*　aboutのセクション　*/
@@ -363,7 +373,7 @@ margin-right: 35px;
 }
 
 .about_img{
-    width: 300px;
+    width: 100%;
     margin-bottom: 60px;
 }
 
@@ -402,7 +412,7 @@ margin-right: 35px;
     font-size: 100px;
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 100;
-    padding-left: 40px;
+ padding-left: 40px;
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
@@ -427,9 +437,9 @@ margin-right: 35px;
 
 }
 
-span {
+/* span {
     background: linear-gradient(transparent 50%, #FDD17B 50%);
-}
+} */
 
 
 .about_num{
@@ -472,7 +482,7 @@ span {
 
 .contact_contents{
     text-align: left;
-    padding: 0 30px;
+    padding: 0 10%;
 
 }
 
@@ -516,8 +526,16 @@ margin: 20px 0;
     display: none;
 }
 
+.hamburger2,
+.header_nav-sp2{
+    display: none;
+}
 
 
+.nav_tex{
+    display: none;
+   
+}
 
 
 @media screen and (max-width: 1100px) {
@@ -529,6 +547,16 @@ margin: 20px 0;
 .hamburger,
 .header_nav-sp{
     display: none;
+}
+
+.hamburger2,
+.header_nav-sp2{
+    display: none;
+}
+
+.nav_tex{
+    display: none;
+   
 }
 
 
@@ -547,17 +575,165 @@ margin: 20px 0;
     }
     
     .main_contents{
+        width: 100%;
         background-color: #fff;
         margin: 0 auto;
     }
+
+    .top_img{
+        width: 100%;
+     }
     
+
+    .main_text{
+        font-size: 9vw;
+        font-family: 'YDWaosagi';
+        color: #fff;
+        /* line-height: 100px; */
+        letter-spacing: 1px;
+        /* margin: -500px 20px 0 20px; */
+    
+     }
+    
+    .main_text2{
+        font-size: 4.5vw;
+        font-family: 'YDWaosagi';
+        color: #fff;
+        /* line-height: 40px; */
+        /* margin: 100px 0 0 20px; */
+    }
+    
+    
+    .main_contents{
+        background-color: #fff;
+        width: 100%;
+    }
+    
+    .message_contents{
+        text-align: center;
+    
+    }
+    
+    .message_contents p{
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+
+
+    }
+    
+    .more{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    
+    .message img{
+        width: 25px;
+        object-fit: cover;
+        
+    }
+    
+    .service{
+        margin-top: -150px;
+    }
+    
+    .service_contents{
+        text-align: left;
+    
+    }
+    
+    .service_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 100;
+        padding-left: 40px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
+        height: 320px;
+    }
+    
+    .service_num{
+        font-size: 18px;
+        font-family: 'YDWaosagi';
+    padding-bottom: 40px;
+    }
+    
+    .service_tit{
+        font-size: 18px;
+    padding-bottom: 20px;
+    }
+    
+    .service_text{
+        font-size: 14px;
+        line-height: 248x;
+        padding-bottom: 20px;
+    
+    
+    }
+    
+    
+    .service_contents img{
+    margin-bottom: 80px;
+    }
+
+
+
+    
+    .footer{
+        text-align: left;
+        padding: 0 30px;
+    
+    }
+    
+    .footer_title{
+        font-size: 18px;
+        font-family: 'YDWaosagi';
+    
+    }
+    
+    .footer_text{
+        font-size: 14px;
+        line-height: 28px;
+        padding-bottom: 40px;
+    
+    }
+
+    .works_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        /* z-index: 9999; */
+    
+    }
+
+    .about_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        /* z-index: 9999; */
+    
+    }
+
+    
+
+
     .hamburger{
         display: block;
         width: 30px;
-        height: 30px;
+        /* height: 30px;  */
         position: absolute;
+        margin: 10px 0 20px 20px;
         top: 10px;
-        right: 70px;
+        /* right: 70px; */
         cursor: pointer;
         z-index: 9999;
       }
@@ -591,6 +767,8 @@ margin: 20px 0;
         transition: .3s;
     
       }
+
+
     
     .open span{
         background: transparent;
@@ -611,20 +789,21 @@ margin: 20px 0;
     .header_nav-sp{
         position: absolute;
         width: 370px;
-        height: 85vh;
+        height: 100vh;
         margin: 0 auto;
         background-color:#F3E9DC;
-        z-index: 9998;
+        z-index: 9999;
     
     }
     
     .header_nav-sp ul{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+         justify-content: start;
         align-items: left;
         gap: 20px;
         height: 100%;
+        margin-left: 20px;
     }
     
     .header_nav-sp li{
@@ -636,10 +815,99 @@ margin: 20px 0;
   display: inline-block;
     }
     
+    .hamburger2{
+        display: block;
+        /* height: 30px;  */
+        position: absolute;
+        margin: 10px 0 20px 20px;
+        top: 10px;
+        /* right: 70px; */
+        cursor: pointer;
+        z-index: 9999;
+      }
+
+
+      .hamburger2 span{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;
+        position: absolute;
+        content: "";
+        top: 13px;
+        transition: .3s;
+      }
+    /* hamメニュー（擬似要素） */
+    .hamburger2 span::before{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;
+        position: absolute;
+        content: "";
+        top: -13px;
+        transition: .3s;
+    
+      }
+      .hamburger2 span::after{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;;
+        position: absolute;
+        content: "";
+        bottom: -13px;
+        transition: .3s;
+    
+      }
+
 
     
+    .open span{
+        background: transparent;
+    }
+    
+    .open span::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after{
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+
+
+
+
+
+.nav_text{
+    font-size: 24px;
+    line-height: 40px;
+    color: #4A6545;
+    font-family: 'YDWaosagi';
+    margin: 60px 20px;
+
+
+    
+}
     
     
     
     
+    
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .hamburger{
+            display: block;
+            width: 30px;
+            /* height: 30px;  */
+            position: absolute;
+            /* margin: 10px 0 20px 20px; */
+            top: 10px;
+            right: 35px;
+            cursor: pointer;
+            z-index: 9999;
+          }
+    
+
     }
